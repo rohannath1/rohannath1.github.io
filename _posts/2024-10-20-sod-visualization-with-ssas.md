@@ -86,4 +86,4 @@ If your organization struggles with SoD visualization, especially with large dat
 ---
 
 ### Let’s Connect!
-Do you have questions or need help implementing a similar solution? Feel free to reach out in the comments or [contact me directly](mailto:youremail@example.com). Let’s make SoD management a breeze together!
+Do you have questions or need help implementing a similar solution? Feel free to reach out in the comments or [contact me directly](mailto:nathrohan.contact@gamil.com). Let’s make SoD management a breeze together!

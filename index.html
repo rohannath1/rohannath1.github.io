@@ -1,85 +1,98 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ site.title }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Rohan Nath - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
-        .navbar {
-            margin-bottom: 30px;
-        }
-        .section-title {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 40px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: #444;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         footer {
-            padding: 20px 0;
-            background-color: #343a40;
-            color: white;
             text-align: center;
-            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Rohan Nath</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1 class="display-4">Hi, I'm Rohan Nath</h1>
-            <p class="lead">Software Engineer with expertise in SQL, SAP Hybris, and infrastructure management.</p>
-        </div>
+    <header>
+        <h1>Rohan Nath</h1>
+        <p>Software Engineer | GRC Specialist | SAP Hybris Expert</p>
     </header>
-
-    <!-- Blog Section -->
-    <section id="blog" class="container">
-        <h2 class="section-title">Blog</h2>
-        <div class="row">
-            {% for post in site.posts %}
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ post.title }}</h5>
-                   <p class="card-text">{{ post.excerpt | default: post.content | truncatewords: 20 }}</p>
-                   <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Software Engineer with expertise in Governance, Risk, and Compliance (GRC), SAP Hybris, SQL Server Analysis Services, and application infrastructure. Passionate about building scalable solutions and enhancing business processes.</p>
     </section>
-
-    <!-- Footer -->
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Over 15 months of experience in IT, handling database administration, SAP GRC projects, and infrastructure management.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Segregation of Duties Analysis:</strong> Implemented analysis solutions integrating SSAS and SAP Fiori.</li>
+            <li><strong>GRC Compliance Tool:</strong> Developing an ISMS-based product for internal audits and ISO standard management.</li>
+            <li><strong>Node.js Infrastructure:</strong> Managing iRM application using PM2 and automated workflows with Power Automate.</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nathrohan.contact@gmail.com">rohannath@example.com</a></p>
+        <!-- <p>Website: <a href="https://rohannath1.github.io/#projects" target="_blank">My Portfolio</a></p> -->
+    </section>
+    
     <footer>
-        <p>© 2024 Rohan Nath</p>
+        <p>&copy; 2025 Rohan Nath. All rights reserved.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
